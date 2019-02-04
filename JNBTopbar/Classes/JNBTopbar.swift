@@ -10,8 +10,6 @@ public class JNBTopbar: NSObject {
   
   public static let shared = JNBTopbar()
   public var hitBoxSize = CGFloat(38)
-  public var animationOption: UIView.AnimationOptions = .transitionCurlUp
-  
   private var alertView: UIView? = nil
   private var innerAlertView: UIView? = nil
   
