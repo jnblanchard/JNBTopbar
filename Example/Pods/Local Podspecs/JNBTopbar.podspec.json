@@ -1,9 +1,10 @@
 {
   "name": "JNBTopbar",
   "version": "0.1.0",
-  "summary": "A short description of JNBTopbar.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/jnblanchard@mac.com/JNBTopbar",
+  "summary": "A customizable top bar.",
+  "swift_version": "4.2",
+  "description": "Use this controller to easily show notification like infomation to users. Show content of any kind by providing your own view.",
+  "homepage": "https://github.com/jnblanchard/JNBTopbar",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +13,11 @@
     "jnblanchard@mac.com": "jnblanchard@mac.com"
   },
   "source": {
-    "git": "https://github.com/jnblanchard@mac.com/JNBTopbar.git",
+    "git": "https://github.com/jnblanchard/JNBTopbar.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "11.0"
   },
   "source_files": "JNBTopbar/Classes/**/*"
 }
