@@ -2,8 +2,25 @@
 # * https://www.objc.io/issues/6-build-tools/travis-ci/
 # * https://github.com/supermarin/xcpretty#usage
 
-osx_image: xcode7.3
 language: objective-c
+osx_image: xcode7.3
+xcode_project: JNBTopbar.xcodeproj
+# xcode_workspace: <WORKSPACE_PLACEHOLDER>
+xcode_scheme: JNBTopbar
+xcode_sdk: iphonesimulator10.0
+env:
+  global:
+    - FRAMEWORK_NAME=JNBTopbar
+before_install:
+  - brew update
+  - brew outdated carthage || brew upgrade carthage
+before_script:
+  # bootstrap the dependencies for the project
+  # you can remove if you don't have dependencies
+  - carthage bootstrap
+before_deploy:
+  - carthage build --no-skip-current
+  - carthage archive JNBTopbar
 # cache: cocoapods
 # podfile: Example/Podfile
 # before_install:
