@@ -29,8 +29,8 @@
 
 /* Begin PBXFileReference section */
 		17AF31006321FD4722A4AB34 /* Pods-JNBTopbar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JNBTopbar_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JNBTopbar_Tests/Pods-JNBTopbar_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		3264A7A8706557DE49676273 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		368DD68E7B76706F5C9241DE /* JNBTopbar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JNBTopbar.podspec; path = ../JNBTopbar.podspec; sourceTree = "<group>"; };
+		3264A7A8706557DE49676273 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		368DD68E7B76706F5C9241DE /* JNBTopbar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JNBTopbar.podspec; path = ../JNBTopbar.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* JNBTopbar_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JNBTopbar_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		799DD85D58851304FABBC5DC /* Pods-JNBTopbar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JNBTopbar_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JNBTopbar_Example/Pods-JNBTopbar_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		8198D1567AFE43141C83E24B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8198D1567AFE43141C83E24B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A46199EEAA13C95938FD9875 /* Pods-JNBTopbar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JNBTopbar_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JNBTopbar_Tests/Pods-JNBTopbar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B0967118E944D30061735ACB /* Pods_JNBTopbar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JNBTopbar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1859E498BA4F33F9497646E /* Pods_JNBTopbar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JNBTopbar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };

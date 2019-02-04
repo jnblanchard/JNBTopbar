@@ -1,0 +1,6 @@
+framework module Pods_JNBTopbar_Example {
+  umbrella header "Pods-JNBTopbar_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

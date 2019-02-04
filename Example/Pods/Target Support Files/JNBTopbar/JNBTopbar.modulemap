@@ -1,0 +1,6 @@
+framework module JNBTopbar {
+  umbrella header "JNBTopbar-umbrella.h"
+
+  export *
+  module * { export * }
+}
