@@ -8,16 +8,16 @@ xcode_project: JNBTopbar.xcodeproj
 # xcode_workspace: <WORKSPACE_PLACEHOLDER>
 xcode_scheme: JNBTopbar
 xcode_sdk: iphonesimulator10.0
+cache: cocoapods
+podfile: JNBTopbar.podspec
 env:
   global:
     - FRAMEWORK_NAME=JNBTopbar
 before_install:
+  - gem install cocoapods
   - brew update
   - brew outdated carthage || brew upgrade carthage
-before_script:
-  # bootstrap the dependencies for the project
-  # you can remove if you don't have dependencies
-  - carthage bootstrap
+  - pod install --project-directory=JNBTopbar
 before_deploy:
   - carthage build --no-skip-current
   - carthage archive JNBTopbar
@@ -27,5 +27,5 @@ before_deploy:
 # - gem install cocoapods # Since Travis is not always on latest version
 # - pod install --project-directory=Example
 script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/JNBTopbar.xcworkspace -scheme JNBTopbar-Example -sdk iphonesimulator10.0 ONLY_ACTIVE_ARCH=NO | xcpretty
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/JNBTopbar.xcworkspace -scheme JNBTopbar-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint
