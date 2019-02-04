@@ -1,31 +1,16 @@
 # references:
-# * https://www.objc.io/issues/6-build-tools/travis-ci/
-# * https://github.com/supermarin/xcpretty#usage
 
-language: swift
-osx_image: xcode9.4
-xcode_project: JNBTopbar.xcodeproj
-# xcode_workspace: <WORKSPACE_PLACEHOLDER>
-xcode_scheme: JNBTopbar
-xcode_sdk: iphonesimulator10.0
+# * https://www.objc.io/issues/6-build-tools/travis-ci/
+
+
+osx_image: xcode7.3
+language: objective-c
 cache: cocoapods
-podfile: JNBTopbar.podspec
-env:
-  global:
-    - FRAMEWORK_NAME=JNBTopbar
+podfile: Example/Podfile
 before_install:
-  - gem install cocoapods
-  - brew update
-  - brew outdated carthage || brew upgrade carthage
+  - gem install cocoapods # Since Travis is not always on latest version
   - pod install --project-directory=Example
-before_deploy:
-  - carthage build --no-skip-current
-  - carthage archive JNBTopbar
-# cache: cocoapods
-# podfile: Example/Podfile
-# before_install:
-# - gem install cocoapods # Since Travis is not always on latest version
-# - pod install --project-directory=Example
 script:
 - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/JNBTopbar.xcworkspace -scheme JNBTopbar-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint
+
