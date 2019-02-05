@@ -159,6 +159,7 @@ public class JNBTopbar: NSObject {
                        borderWidth: CGFloat = 0,
                        borderColor: CGColor = UIColor.clear.cgColor,
                        topAnchor: NSLayoutYAxisAnchor? = nil,
+                       forDuration: TimeInterval? = nil,
                        completion: ((Bool) -> Void)? = nil ) {
     
     guard let topVC = topViewController() else { return }
@@ -202,6 +203,12 @@ public class JNBTopbar: NSObject {
         topVC.view.layoutSubviews()
       }) { (completed) in
         completion?(completed)
+        if let fullDuration = forDuration {
+          let _ = Timer.scheduledTimer(withTimeInterval: fullDuration, repeats: false) { (timer) in
+            guard timer.isValid else { return }
+            self.hide()
+          }
+        }
       }
     }
     
