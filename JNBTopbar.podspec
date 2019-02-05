@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JNBTopbar'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'A customizable top bar.'
   s.swift_version = '4.2'
 
