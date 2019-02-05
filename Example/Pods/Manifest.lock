@@ -5,7 +5,7 @@ PODS:
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
   - JNBTopbar (0.1.0)
-  - Nimble (7.0.3)
+  - Nimble (7.1.3)
   - Nimble-Snapshots (6.3.0):
     - Nimble-Snapshots/Core (= 6.3.0)
   - Nimble-Snapshots/Core (6.3.0):
@@ -16,7 +16,7 @@ PODS:
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
   - JNBTopbar (from `../`)
-  - Nimble
+  - Nimble (~> 7.1.2)
   - Nimble-Snapshots (~> 6.3.0)
   - Quick (~> 1.2.0)
 
@@ -34,10 +34,10 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   JNBTopbar: a0622bd6b0a418f11765a21b7b8053fd0c17652f
-  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  Nimble: 2839b01d1b31f6a6a7777a221f0d91cf52e8e27b
   Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
 
-PODFILE CHECKSUM: d61eca5397b682155cfc47deed52bafda344e340
+PODFILE CHECKSUM: 12248f94b817996e4d3c89a1c5d59251622bd49b
 
 COCOAPODS: 1.5.3
