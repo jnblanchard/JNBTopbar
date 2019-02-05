@@ -6,6 +6,8 @@
 //  Copyright © 2019 John Norman Blanchard. All rights reserved.
 //
 
+import UIKit
+
 public class JNBTopbar: NSObject {
   
   public static let shared = JNBTopbar()
@@ -179,10 +181,10 @@ public class JNBTopbar: NSObject {
       topVC.view.addSubview(alertView!)
       let pgr = UIPanGestureRecognizer(target: self, action: #selector(handle(pan:)))
       alertView?.addGestureRecognizer(pgr)
-      alertView?.leadingAnchor.constraint(equalTo: topVC.view.leadingAnchor, constant: screenInsets.left).isActive = true
-      alertView?.trailingAnchor.constraint(equalTo: topVC.view.trailingAnchor, constant: screenInsets.right).isActive = true
+      alertView?.leadingAnchor.constraint(equalTo: topVC.view.safeAreaLayoutGuide.leadingAnchor, constant: (-1)*screenInsets.left).isActive = true
+      alertView?.trailingAnchor.constraint(equalTo: topVC.view.safeAreaLayoutGuide.trailingAnchor, constant: screenInsets.right).isActive = true
       alertView?.heightAnchor.constraint(equalToConstant: height).isActive = true
-      alertView?.topAnchor.constraint(equalTo: topAnchor ?? topVC.view.safeAreaLayoutGuide.topAnchor, constant: screenInsets.top).isActive = true
+      alertView?.topAnchor.constraint(equalTo: topAnchor ?? topVC.view.safeAreaLayoutGuide.topAnchor, constant: (-1)*screenInsets.top).isActive = true
       if let tempView = contentView {
         for tempView in alertView?.subviews ?? [] {
           tempView.removeFromSuperview()
